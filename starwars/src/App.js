@@ -1,12 +1,11 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
-import Data from './Data';
-
 import axios from "axios";
+import DataCard from "./Datacard";
 
 
-const App = () => {
-  <Data/>
+function App() {
+  
   const [rwState, setRWState] = useState();
     useEffect(() => {
       const fetchData = () => {
@@ -28,12 +27,16 @@ const App = () => {
       else {
   
     return (
+      
       <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <p>Stuff is here</p>
+        <h1 className="Header">{rwState}</h1>
+        <p>May the force be with you.</p>
+        <DataCard/>
+
       </div>
      
     )};
+    
   }
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
