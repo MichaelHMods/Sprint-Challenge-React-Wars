@@ -25,15 +25,19 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React was created by Facebook to solve a problem that they had. They needed a streamline way to render many sources of data on one page. They created react to streamline the process. They created a way to take all of the DOM and streamline it. This made it easier to create a page that had plenty of things running at the same time like ads, banners, and feeds without slowing down the end users.
 
 - [ ] What does it mean to _think_ in react?
+Thinking in React is about planning. You plan out your site or app. Then you plan out the components. Then you think about how you want them rendered within your wireframe. Then you need to set up how you are going to pass the components across the files. Thinking in React is a process. 
 
 - [ ] Describe state.
+State- is the place where the data comes from. 
 
 - [ ] Describe props.
+Props are immutable properties passed between containers or files. Can only be passed from parent to child and grandchild if necessary. 
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+Side effects are things like getting data from an api or other outside sources. We use a sync effect to stop things like infinite loops from happening. We do this by passing in a dependency array as the second argument to the effect hook.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
